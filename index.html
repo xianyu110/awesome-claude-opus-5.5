@@ -98,6 +98,10 @@ footer a{color:var(--muted)}
 .ifnote{font-size:12px;color:var(--subtle);padding:6px 12px;border-top:1px solid var(--divider)}.ifnote a{color:var(--accent)}
 .car{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);color:#fff;border:0;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px}
 .car.l{left:10px}.car.r{right:10px}.dots{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:12px;color:#ddd}
+.vfail{position:relative;width:100%;min-height:300px;display:flex;align-items:center;justify-content:center}
+.vfail img{max-width:100%;max-height:calc(94vh - 60px);opacity:.35;display:block}
+.vfo{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:20px}
+.vfo b{font-size:17px;background:rgba(0,0,0,.6);padding:6px 14px;border-radius:8px}
 .mside{padding:20px 20px 18px;overflow:auto;display:flex;flex-direction:column;gap:10px}
 .mside h3{margin:0;font-size:20px;line-height:1.3;padding-right:30px}
 .mside .desc{color:var(--muted);margin:0}
@@ -173,7 +177,7 @@ function thumbHTML(c){
   const m=c.media||[],f=m[0];
   const kind=f?(f.type==="video"?"视频":f.type==="animated_gif"?"GIF":m.length>1?m.length+" 图":"图片"):"";
   const ph=`<div class="ph">${ICON[c.category]||"✳️"}<small>${c.thumb?"":"暂无预览"}</small></div>`;
-  const img=c.thumb?`<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(small(c.thumb))}" data-full="${esc(c.thumb)}" alt="${esc(c.title_zh)}" onload="this.classList.add('ok');this.previousElementSibling.style.display='none'" onerror="if(!this.dataset.r){this.dataset.r=1;this.src=this.dataset.full}else{this.remove()}">`:"";
+  const img=c.thumb?`<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(c.thumb_cdn||small(c.thumb))}" data-full="${esc(c.thumb_cdn?small(c.thumb):c.thumb)}" alt="${esc(c.title_zh)}" onload="this.classList.add('ok');this.previousElementSibling.style.display='none'" onerror="if(!this.dataset.r){this.dataset.r=1;this.src=this.dataset.full}else{this.remove()}">`:"";
   return `<div class="thumb">${ph}${img}${kind?`<span class="badge">${kind==="视频"?"▶ 视频":kind}</span>`:""}${c.playable_demo==="yes"?'<span class="badge pl">可试玩</span>':""}${f&&f.type!=="photo"?'<span class="playi">▶</span>':""}</div>`;
 }
 function card(c,rank){
@@ -193,12 +197,38 @@ function openCase(id,list){
   drawModal(); $("#modal").classList.add("open"); document.body.style.overflow="hidden";
 }
 function closeModal(){
+  clearTimeout(VT);
   $("#modal").classList.remove("open"); $("#mview").innerHTML=""; document.body.style.overflow="";
   if(location.hash.startsWith("#case-")) history.replaceState(null,"",location.pathname+location.search);
   CUR=null;
 }
 function step(d){ if(!CUR) return; const i=LIST.findIndex(x=>x.id===CUR.id); const n=LIST[(i+d+LIST.length)%LIST.length]; openCase(n.id,LIST); }
+
+function carHTML(m){return `<button class="car l" onclick="MI=(MI-1+CUR.media.length)%CUR.media.length;drawView()">‹</button><button class="car r" onclick="MI=(MI+1)%CUR.media.length;drawView()">›</button><div class="dots">${MI+1} / ${m.length}</div>`;}
+let VT=null;
+function playWithFallback(vid,srcs,poster,f){
+  let i=0,done=false;
+  const tryNext=()=>{
+    clearTimeout(VT);
+    if(i>=srcs.length){ if(!done){done=true;mediaFail(f,poster);} return; }
+    const src=srcs[i++]; vid.src=src; vid.load();
+    VT=setTimeout(()=>{ if(!done&&vid.readyState<2) tryNext(); },6000);
+  };
+  vid.addEventListener("loadeddata",()=>{done=true;clearTimeout(VT);vid.dataset.ok=vid.currentSrc;});
+  vid.addEventListener("error",()=>{ if(!done) tryNext(); });
+  tryNext();
+}
+function mediaFail(f,poster){
+  clearTimeout(VT);
+  const c=CUR; if(!c) return;
+  const p=poster||(f&&(f.poster_cdn||f.poster))||c.thumb_cdn||c.thumb||"";
+  const vf=f&&(f.cdn||f.url);
+  $("#mview").innerHTML=`<div class="vfail">${p?`<img referrerpolicy="no-referrer" src="${esc(p)}" onerror="this.remove()">`:`<div style="font-size:64px">${ICON[c.category]||"✳️"}</div>`}
+   <div class="vfo"><b>${f&&f.type!=="photo"?"视频":"媒体"}加载失败（可能需要代理）</b>
+   <div class="mbtns"><a class="pri" href="${esc(c.url)}" target="_blank" rel="noopener">打开原帖观看 ↗</a>${vf?`<a href="${esc(vf)}" target="_blank" rel="noopener">直接打开视频文件 ↗</a>`:""}</div></div></div>`;
+}
 function drawView(){
+  clearTimeout(VT);
   const c=CUR,v=$("#mview"),note=$("#ifnote"); note.hidden=true;
   if(TAB==="demo"){
     v.innerHTML=`<iframe src="${esc(c.demo_url)}" loading="lazy" allow="fullscreen; autoplay; gamepad; xr-spatial-tracking; accelerometer; gyroscope" allowfullscreen referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-popups allow-forms"></iframe>`;
@@ -208,10 +238,21 @@ function drawView(){
   if(!m.length){ v.innerHTML=`<div style="text-align:center;color:var(--subtle);padding:40px"><div style="font-size:64px">${ICON[c.category]||"✳️"}</div><p>该帖暂无可预览的媒体</p><a class="mbtn" style="color:var(--accent)" href="${esc(c.url)}" target="_blank" rel="noopener">去 X 查看原帖 ↗</a></div>`; return; }
   const f=m[MI];
   let h="";
-  if(f.type==="photo") h=`<img referrerpolicy="no-referrer" src="${esc(f.url)}${f.url.includes("?")?"&":"?"}name=large" alt="${esc(c.title_zh)}">`;
-  else if(f.type==="animated_gif") h=`<video src="${esc(f.url)}" poster="${esc(f.poster||"")}" autoplay muted loop playsinline controls referrerpolicy="no-referrer"></video>`;
-  else h=f.url?`<video src="${esc(f.url)}" poster="${esc(f.poster||"")}" controls playsinline preload="metadata" referrerpolicy="no-referrer"></video>`:`<img referrerpolicy="no-referrer" src="${esc(f.poster)}">`;
-  if(m.length>1) h+=`<button class="car l" onclick="MI=(MI-1+CUR.media.length)%CUR.media.length;drawView()">‹</button><button class="car r" onclick="MI=(MI+1)%CUR.media.length;drawView()">›</button><div class="dots">${MI+1} / ${m.length}</div>`;
+  const mediaBox=()=>v;
+  if(f.type==="photo"){
+    const srcs=[f.cdn,f.url+(f.url.includes("?")?"&":"?")+"name=large"].filter(Boolean);
+    h=`<img referrerpolicy="no-referrer" src="${esc(srcs[0])}" data-alt="${esc(srcs[1]||"")}" alt="${esc(c.title_zh)}" onerror="if(this.dataset.alt&&!this.dataset.r){this.dataset.r=1;this.src=this.dataset.alt}else{mediaFail(null)}">`;
+  } else {
+    const isGif=f.type==="animated_gif";
+    const srcs=[f.cdn,f.url].filter(Boolean);
+    const poster=f.poster_cdn||f.poster||"";
+    if(!srcs.length){ h=`<img referrerpolicy="no-referrer" src="${esc(poster)}">`; }
+    else { h=`<video id="mvid" poster="${esc(poster)}" ${isGif?"autoplay muted loop":""} controls playsinline preload="auto" referrerpolicy="no-referrer"></video>`; }
+    v.innerHTML=h+(m.length>1?carHTML(m):"");
+    const vid=$("#mvid"); if(vid) playWithFallback(vid,srcs,poster,f);
+    return;
+  }
+  h+=m.length>1?carHTML(m):"";
   v.innerHTML=h;
 }
 function drawModal(){

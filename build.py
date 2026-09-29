@@ -31,9 +31,15 @@ for idx,c,t,desc,pr in dec:
 import os
 CR={v:k for k,v in CAT.items()}
 MED=json.load(open('media.json')) if os.path.exists('media.json') else {}
+MIR={k:v['cdn'] for k,v in json.load(open('mirror.json')).items()} if os.path.exists('mirror.json') else {}
 for x in cases:
     m=MED.get(x['url'].rsplit('/',1)[1],{})
     x['thumb']=m.get('thumb','');x['media']=m.get('media',[]);x['full_text']=m.get('full_text','')
+    for it in x['media']:
+        if MIR.get(it.get('url')): it['cdn']=MIR[it['url']]
+        if it.get('poster') and MIR.get(it['poster']): it['poster_cdn']=MIR[it['poster']]
+    x['thumb_cdn']=MIR.get(x['thumb'],'')
+    x['video_cdn']=next((it.get('cdn','') for it in x['media'] if it['type']!='photo' and it.get('cdn')),'')
     x['links']=m.get('links',[])
     if not x['demo_url'] and x['links']:
         x['demo_url']=x['links'][0]; dom=urlparse(x['demo_url']).netloc.lower().removeprefix('www.')
@@ -43,7 +49,7 @@ order=list(CAT.values())
 cases.sort(key=lambda x:(order.index(x['category']),-x['likes']))
 for n,x in enumerate(cases,1): x['id']=n
 fields=['id','category','title_zh','desc_zh','author','url','date','demo_url','playable_demo','prompt_included','likes','impressions']
-json.dump([{k:x[k] for k in fields+['thumb','media','full_text','links']} for x in cases],open('cases.json','w'),ensure_ascii=False,indent=1)
+json.dump([{k:x[k] for k in fields+['thumb','thumb_cdn','video_cdn','media','full_text','links']} for x in cases],open('cases.json','w'),ensure_ascii=False,indent=1)
 with open('cases.csv','w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(cases)
 cnt=collections.Counter(x['category'] for x in cases)
@@ -64,7 +70,7 @@ L+=['# Awesome Claude Opus 5.5 案例合集','',
 for k in order: L.append(f'| {CATZH[k]} | {cnt[k]} |')
 L+=['','## 🏆 Top 20（高互动 / 可试玩优先）','','| # | 预览 | 案例 | 分类 | 说明 | 作者 | ❤️ | 链接 | Demo |','|---|---|---|---|---|---|---|---|---|']
 for n,x in enumerate(top,1):
-    th=f'<a href="https://xianyu110.github.io/awesome-claude-opus-5.5/#case-{x["id"]}"><img src="{x["thumb"]}" width="120" alt="{esc(x["title_zh"])}"></a>' if x['thumb'] else '—'
+    th=f'<a href="https://xianyu110.github.io/awesome-claude-opus-5.5/#case-{x["id"]}"><img src="{x["thumb_cdn"] or x["thumb"]}" width="120" alt="{esc(x["title_zh"])}"></a>' if x['thumb'] else '—'
     L.append(f"| {n} | {th} | {esc(x['title_zh'])} | {x['category']} | {esc(x['desc_zh'])} | {x['author']} | {x['likes']:,} | [原帖]({x['url']}) | {dl(x)} |")
 L+=['','## 📂 目录','']
 for k in order: L.append(f"- [{CATZH[k]}（{cnt[k]}）](#{re.sub(r'[^0-9a-z一-龥_ -]','',CATZH[k].lower()).strip().replace(' ','-')})")
