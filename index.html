@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#171819">
+<meta name="referrer" content="no-referrer">
 <title>Awesome Claude Opus 5.5 案例合集｜1019 个真实玩法（游戏/3D/网页/Agent/对比）</title>
 <meta name="description" content="Awesome Claude Opus 5.5 案例合集：收录 1019 个 X 上创作者用 Claude Opus 5.5 做出的真实案例，涵盖游戏、3D/WebGPU、网页、应用、Agent 工作流、编程与模型对比，支持搜索与分类筛选。">
 <meta name="keywords" content="Claude Opus 5.5,Opus 5.5,Anthropic,Claude,案例,awesome list,AI demo,Claude Code,3D,游戏">
@@ -16,7 +17,12 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://xianyu110.github.io/awesome-claude-opus-5.5/">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://xianyu110.github.io/awesome-claude-opus-5.5/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Awesome Claude Opus 5.5 · 1019 个案例">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xianyu110.github.io/awesome-claude-opus-5.5/og-cover.png">
 <meta name="twitter:title" content="Awesome Claude Opus 5.5 案例合集">
 <meta name="twitter:description" content="1019 个用 Claude Opus 5.5 做出的真实案例，可搜索可筛选。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳️</text></svg>">
@@ -68,6 +74,41 @@ h2{font-size:20px;margin:34px 0 14px;display:flex;align-items:center;gap:10px}
 .cn a{color:var(--accent)}
 footer{color:var(--subtle);font-size:13px;margin-top:40px;border-top:1px solid var(--divider);padding-top:16px}
 footer a{color:var(--muted)}
+
+.card{cursor:pointer;padding:0;overflow:hidden}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.thumb{position:relative;aspect-ratio:16/10;background:#121314;overflow:hidden;border-bottom:1px solid var(--border)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .3s,transform .3s}
+.thumb img.ok{opacity:1}.card:hover .thumb img{transform:scale(1.03)}
+.thumb .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:44px;background:radial-gradient(circle at 30% 20%,#2a2b2c,#151617)}
+.thumb .ph small{position:absolute;bottom:10px;font-size:12px;color:var(--subtle)}
+.badge{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;border-radius:6px;padding:2px 7px;backdrop-filter:blur(4px)}
+.playi{position:absolute;inset:0;margin:auto;width:48px;height:48px;border-radius:50%;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;border:1px solid rgba(255,255,255,.3);pointer-events:none}
+.badge.pl{left:auto;right:8px;background:var(--accent);color:#171819;font-weight:700}
+.modal{position:fixed;inset:0;z-index:100;display:none;background:rgba(8,8,9,.82);backdrop-filter:blur(6px);padding:3vh 3vw}
+.modal.open{display:flex;align-items:center;justify-content:center}
+.mbox{background:var(--surface);border:1px solid var(--border);border-radius:16px;width:min(1180px,100%);max-height:94vh;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr);overflow:hidden;position:relative}
+.mstage{background:#0e0f10;display:flex;flex-direction:column;min-height:0}
+.mtabs{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid var(--divider)}
+.mtabs button{background:none;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.mtabs button.on{background:var(--accent);border-color:var(--accent);color:#171819;font-weight:600}
+.mview{flex:1;position:relative;display:flex;align-items:center;justify-content:center;min-height:300px;max-height:calc(94vh - 52px)}
+.mview img,.mview video{max-width:100%;max-height:calc(94vh - 60px);display:block;object-fit:contain}
+.mview iframe{width:100%;height:calc(94vh - 110px);border:0;background:#fff}
+.ifnote{font-size:12px;color:var(--subtle);padding:6px 12px;border-top:1px solid var(--divider)}.ifnote a{color:var(--accent)}
+.car{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);color:#fff;border:0;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px}
+.car.l{left:10px}.car.r{right:10px}.dots{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:12px;color:#ddd}
+.mside{padding:20px 20px 18px;overflow:auto;display:flex;flex-direction:column;gap:10px}
+.mside h3{margin:0;font-size:20px;line-height:1.3;padding-right:30px}
+.mside .desc{color:var(--muted);margin:0}
+.ftext{white-space:pre-wrap;word-break:break-word;font-size:14px;color:var(--text);background:#18191a;border:1px solid var(--divider);border-radius:10px;padding:12px;max-height:40vh;overflow:auto;margin:0}
+.mbtns{display:flex;gap:8px;flex-wrap:wrap}.mbtns a{text-decoration:none;border:1px solid var(--border);border-radius:9px;padding:7px 14px;font-size:14px}
+.mbtns a:hover{border-color:var(--accent);color:var(--accent)}.mbtns a.pri{background:var(--accent);border-color:var(--accent);color:#171819;font-weight:600}
+.mclose{position:absolute;top:10px;right:12px;z-index:3;background:rgba(0,0,0,.5);border:1px solid var(--border);color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px}
+.mnav{display:flex;justify-content:space-between;margin-top:auto;padding-top:8px}
+.mnav button{background:none;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}.mnav button:hover{color:var(--text);border-color:var(--accent)}
+.hint{font-size:12px;color:var(--subtle)}
+@media (max-width:860px){.modal{padding:0}.mbox{grid-template-columns:1fr;max-height:100vh;height:100vh;border-radius:0;overflow:auto}.mview{max-height:none;min-height:220px}.mview img,.mview video{max-height:60vh}.mview iframe{height:70vh}.mside{overflow:visible}.ftext{max-height:none}.hint{display:none}}
 @media (max-width:860px){.layout{display:block}.sidebar{position:static;height:auto;width:auto;border-right:0;border-bottom:1px solid var(--divider);padding:16px}.nav{display:flex;flex-wrap:wrap;gap:4px}.nav button{width:auto}.side-links{display:none}main{padding:20px 16px 50px}h1{font-size:26px}}
 </style>
 </head>
@@ -115,19 +156,88 @@ footer a{color:var(--muted)}
   <footer>友链：<a href="https://github.com/xianyu110/awesome-gpt-6-astra">Awesome GPT-6 Astra</a> ｜ <a href="https://github.com/xianyu110/awesome-gpt-image2.5">Awesome GPT Image 2.5</a> · 数据截至 2026-09-28（北京时间）· 由 <a href="https://github.com/xianyu110">@xianyu110</a> 整理 · 欢迎 PR 补充</footer>
 </main>
 </div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="案例预览">
+ <div class="mbox"><button class="mclose" id="mclose" aria-label="关闭">✕</button>
+  <div class="mstage"><div class="mtabs" id="mtabs"></div><div class="mview" id="mview"></div><div class="ifnote" id="ifnote" hidden></div></div>
+  <div class="mside" id="mside"></div>
+ </div></div>
 <script>
 const CATS={"Game":"🎮 游戏","3D&WebGPU":"🧊 3D & WebGPU","Web&UI":"🌐 网页与 UI","App&Tool":"🛠️ 应用与工具","Agent&Workflow":"🤖 Agent 与工作流","Coding":"💻 编程","Writing&Analysis":"📝 写作与分析","Comparison":"⚔️ 模型对比","Other":"🎬 动效/动画/音乐"};
 let DATA=[],cat="all",shown=60;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>n>=10000?(n/10000).toFixed(1)+"万":n.toLocaleString();
+const ICON={"Game":"🎮","3D&WebGPU":"🧊","Web&UI":"🌐","App&Tool":"🛠️","Agent&Workflow":"🤖","Coding":"💻","Writing&Analysis":"📝","Comparison":"⚔️","Other":"🎬"};
+const small=u=>u&&u.includes("pbs.twimg.com")?u+(u.includes("?")?"&":"?")+"name=small":u;
+function thumbHTML(c){
+  const m=c.media||[],f=m[0];
+  const kind=f?(f.type==="video"?"视频":f.type==="animated_gif"?"GIF":m.length>1?m.length+" 图":"图片"):"";
+  const ph=`<div class="ph">${ICON[c.category]||"✳️"}<small>${c.thumb?"":"暂无预览"}</small></div>`;
+  const img=c.thumb?`<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(small(c.thumb))}" data-full="${esc(c.thumb)}" alt="${esc(c.title_zh)}" onload="this.classList.add('ok');this.previousElementSibling.style.display='none'" onerror="if(!this.dataset.r){this.dataset.r=1;this.src=this.dataset.full}else{this.remove()}">`:"";
+  return `<div class="thumb">${ph}${img}${kind?`<span class="badge">${kind==="视频"?"▶ 视频":kind}</span>`:""}${c.playable_demo==="yes"?'<span class="badge pl">可试玩</span>':""}${f&&f.type!=="photo"?'<span class="playi">▶</span>':""}</div>`;
+}
 function card(c,rank){
-  const demo=c.demo_url?`<a class="${c.playable_demo==="yes"?"play":""}" href="${esc(c.demo_url)}" target="_blank" rel="noopener">${c.playable_demo==="yes"?"▶ 试玩":"🔗 链接"}</a>`:"";
-  return `<article class="card"><div class="top"><span class="tag">${CATS[c.category]||c.category}</span><span class="rank">${rank?"#"+rank:"No."+c.id}</span></div>
+  const demo=c.demo_url?`<a class="${c.playable_demo==="yes"?"play":""}" href="${esc(c.demo_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${c.playable_demo==="yes"?"▶ 试玩":"🔗 链接"}</a>`:"";
+  return `<article class="card" data-id="${c.id}" tabindex="0">${thumbHTML(c)}<div class="body"><div class="top"><span class="tag">${CATS[c.category]||c.category}</span><span class="rank">${rank?"#"+rank:"No."+c.id}</span></div>
   <h3>${esc(c.title_zh)}${c.prompt_included==="yes"?" 📝":""}</h3><p>${esc(c.desc_zh)}</p>
   <div class="meta"><span>${esc(c.author)}</span><span>❤️ ${fmt(c.likes)}</span><span>👁 ${fmt(c.impressions)}</span><span>${esc(c.date.slice(0,10))}</span></div>
-  <div class="acts"><a href="${esc(c.url)}" target="_blank" rel="noopener">原帖 ↗</a>${demo}</div></article>`;
+  <div class="acts"><a href="${esc(c.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">原帖 ↗</a>${demo}</div></div></article>`;
 }
+/* ---------- modal ---------- */
+let CUR=null,LIST=[],MI=0,TAB="media";
+const BYID={};
+function openCase(id,list){
+  const c=BYID[id]; if(!c) return;
+  CUR=c; LIST=list&&list.length?list:(filtered().some(x=>x.id===c.id)?filtered():DATA); MI=0; TAB="media";
+  if(location.hash!=="#case-"+id) history.replaceState(null,"","#case-"+id);
+  drawModal(); $("#modal").classList.add("open"); document.body.style.overflow="hidden";
+}
+function closeModal(){
+  $("#modal").classList.remove("open"); $("#mview").innerHTML=""; document.body.style.overflow="";
+  if(location.hash.startsWith("#case-")) history.replaceState(null,"",location.pathname+location.search);
+  CUR=null;
+}
+function step(d){ if(!CUR) return; const i=LIST.findIndex(x=>x.id===CUR.id); const n=LIST[(i+d+LIST.length)%LIST.length]; openCase(n.id,LIST); }
+function drawView(){
+  const c=CUR,v=$("#mview"),note=$("#ifnote"); note.hidden=true;
+  if(TAB==="demo"){
+    v.innerHTML=`<iframe src="${esc(c.demo_url)}" loading="lazy" allow="fullscreen; autoplay; gamepad; xr-spatial-tracking; accelerometer; gyroscope" allowfullscreen referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-popups allow-forms"></iframe>`;
+    note.hidden=false; note.innerHTML=`若页面空白或拒绝嵌入，请 <a href="${esc(c.demo_url)}" target="_blank" rel="noopener">在新窗口打开 Demo ↗</a>`; return;
+  }
+  const m=c.media||[];
+  if(!m.length){ v.innerHTML=`<div style="text-align:center;color:var(--subtle);padding:40px"><div style="font-size:64px">${ICON[c.category]||"✳️"}</div><p>该帖暂无可预览的媒体</p><a class="mbtn" style="color:var(--accent)" href="${esc(c.url)}" target="_blank" rel="noopener">去 X 查看原帖 ↗</a></div>`; return; }
+  const f=m[MI];
+  let h="";
+  if(f.type==="photo") h=`<img referrerpolicy="no-referrer" src="${esc(f.url)}${f.url.includes("?")?"&":"?"}name=large" alt="${esc(c.title_zh)}">`;
+  else if(f.type==="animated_gif") h=`<video src="${esc(f.url)}" poster="${esc(f.poster||"")}" autoplay muted loop playsinline controls referrerpolicy="no-referrer"></video>`;
+  else h=f.url?`<video src="${esc(f.url)}" poster="${esc(f.poster||"")}" controls playsinline preload="metadata" referrerpolicy="no-referrer"></video>`:`<img referrerpolicy="no-referrer" src="${esc(f.poster)}">`;
+  if(m.length>1) h+=`<button class="car l" onclick="MI=(MI-1+CUR.media.length)%CUR.media.length;drawView()">‹</button><button class="car r" onclick="MI=(MI+1)%CUR.media.length;drawView()">›</button><div class="dots">${MI+1} / ${m.length}</div>`;
+  v.innerHTML=h;
+}
+function drawModal(){
+  const c=CUR;
+  const tabs=[["media",(c.media||[]).some(x=>x.type!=="photo")?"▶ 视频/媒体":"🖼 媒体"]];
+  if(c.playable_demo==="yes") tabs.push(["demo","🎮 在线试玩"]);
+  $("#mtabs").innerHTML=tabs.map(([k,l])=>`<button data-t="${k}" class="${k===TAB?"on":""}">${l}</button>`).join("")+`<span class="hint" style="margin-left:auto;align-self:center">Esc 关闭 · ←/→ 切换案例</span>`;
+  $("#mtabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{TAB=b.dataset.t;drawModal();});
+  const i=LIST.findIndex(x=>x.id===c.id);
+  $("#mside").innerHTML=`<span class="tag" style="align-self:flex-start">${CATS[c.category]||c.category}</span>
+   <h3>${esc(c.title_zh)}${c.prompt_included==="yes"?" 📝":""}</h3><p class="desc">${esc(c.desc_zh)}</p>
+   <div class="meta"><span>${esc(c.author)}</span><span>${esc(c.date)}</span><span>❤️ ${fmt(c.likes)}</span><span>👁 ${fmt(c.impressions)}</span></div>
+   <div class="mbtns"><a class="pri" href="${esc(c.url)}" target="_blank" rel="noopener">打开原帖 (X) ↗</a>${c.demo_url?`<a href="${esc(c.demo_url)}" target="_blank" rel="noopener">打开 Demo ↗</a>`:""}</div>
+   ${c.full_text?`<pre class="ftext">${esc(c.full_text)}</pre>`:""}
+   <div class="mnav"><button onclick="step(-1)">← 上一个</button><span class="hint" style="align-self:center">${i+1} / ${LIST.length}</span><button onclick="step(1)">下一个 →</button></div>`;
+  drawView();
+}
+$("#mclose").onclick=closeModal;
+$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal();});
+document.addEventListener("keydown",e=>{
+  if(!CUR){ if(e.key==="Enter"&&e.target.classList&&e.target.classList.contains("card")) openCase(+e.target.dataset.id); return; }
+  if(e.key==="Escape") closeModal(); else if(e.key==="ArrowRight") step(1); else if(e.key==="ArrowLeft") step(-1);
+});
+function bindCards(root,listFn){ root.addEventListener("click",e=>{const a=e.target.closest(".card"); if(a&&!e.target.closest("a")) openCase(+a.dataset.id,listFn());}); }
+function fromHash(){ const m=location.hash.match(/^#case-(\d+)$/); if(m&&BYID[m[1]]) openCase(+m[1]); else if(CUR&&!m) closeModal(); }
+window.addEventListener("hashchange",fromHash);
 function filtered(){
   const q=$("#q").value.trim().toLowerCase(),d=$("#demo").checked,p=$("#prompt").checked,s=$("#sort").value;
   let r=DATA.filter(c=>(cat==="all"||c.category===cat)&&(!d||c.demo_url)&&(!p||c.prompt_included==="yes")&&(!q||(c.title_zh+" "+c.desc_zh+" "+c.author+" "+c.category).toLowerCase().includes(q)));
@@ -142,12 +252,12 @@ function nav(){
   $("#nav").querySelectorAll("button").forEach(b=>b.onclick=()=>{cat=b.dataset.c;shown=60;nav();render();$("#all").scrollIntoView({behavior:"smooth"});});
 }
 fetch("cases.json").then(r=>r.json()).then(d=>{
-  DATA=d;
+  DATA=d; d.forEach(c=>BYID[c.id]=c);
   const demo=d.filter(c=>c.demo_url).length,play=d.filter(c=>c.playable_demo==="yes").length,pr=d.filter(c=>c.prompt_included==="yes").length,authors=new Set(d.map(c=>c.author)).size;
   $("#stats").innerHTML=[["案例总数",d.length],["创作者",authors],["含链接/Demo",demo],["可在线试玩",play],["附提示词",pr]].map(([a,b])=>`<div class="stat"><b>${b}</b><small>${a}</small></div>`).join("");
   const top=[...d].sort((a,b)=>b.likes*(b.playable_demo==="yes"?1.5:1)-a.likes*(a.playable_demo==="yes"?1.5:1)).slice(0,20);
   $("#top").innerHTML=top.map((c,i)=>card(c,i+1)).join("");
-  nav();render();
+  nav();render(); window.TOP=top; bindCards($("#top"),()=>window.TOP); bindCards($("#list"),filtered); fromHash();
 });
 ["#q","#demo","#prompt","#sort"].forEach(s=>$(s).addEventListener("input",()=>{shown=60;render();}));
 $("#more").onclick=()=>{shown+=60;render();};
