@@ -83,6 +83,6 @@ L+=['','## Claude 国内使用','','| 服务 | 说明 | 链接 |','|---|---|---|
 '友链：[Awesome GPT-6 Astra](https://github.com/xianyu110/awesome-gpt-6-astra) ｜ [Awesome GPT Image 2.5](https://github.com/xianyu110/awesome-gpt-image2.5)','',
 '🌐 在线浏览（支持搜索/分类筛选）：https://xianyu110.github.io/awesome-claude-opus-5.5/']
 L+=['','---','','图例：📝 = 原帖附提示词；▶️ 试玩 = 可在线体验；🔗 = 相关链接（源码/视频/文章）。互动数据截至 2026-09-28 抓取时。','','欢迎 PR 补充 🙌']
-open('README.md','w').write('\n'.join(L)+'\n')
+open('ALL_CASES.md','w').write('\n'.join(L)+'\n')  # full list; curated README is built separately
 print(len(cases),dict(cnt),'demo',nd,'playable',npl,'prompt',npr)
 for x in top[:20]: print(x['author'],x['likes'],x['title_zh'],x['url'],x['demo_url'])
