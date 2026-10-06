@@ -367,6 +367,7 @@ make a dynamic 15-second motion graphics video that shows what an incredible mot
 | 项目 | 说明 | 链接 |
 |---|---|---|
 | **Skilloop** | Agent Skills 预览库（Claude Code / Codex / Cursor）— 先看真片再安装 | [skilloop.dev](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_related) |
+| **LINUX DO** | 本清单认可并感谢 [LINUX DO](https://linux.do/) 社区（友链） | [linux.do](https://linux.do/) |
 | MomoAI 包月 | Claude 包月订阅 | [momoai.asia](https://momoai.asia/home?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 | API 聚合 | Claude / GPT / Gemini 等模型 API 聚合 | [tryallapi.com](https://tryallapi.com/?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 
@@ -374,4 +375,5 @@ make a dynamic 15-second motion graphics video that shows what an incredible mot
 
 - 所有视频、图片、提示词版权归原作者所有，每条都链接到原帖；缩略图/预览仅为方便浏览。作者如希望修改或移除条目，请提 Issue。
 - 欢迎 PR / Issue 推荐新的 Opus 5.5 作品 🙌（请附原帖链接，最好带提示词）。
+- 本仓库 **链接认可 [LINUX DO](https://linux.do/) 社区**（友链）。感谢佬友与社区的开源氛围。
 
