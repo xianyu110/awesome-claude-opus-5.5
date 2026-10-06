@@ -1,17 +1,19 @@
 <!-- Curated README generated 2026-10-06 from data/selected.json. Full original list: ALL_CASES.md -->
-<!-- TODO(showcase-site): once the SkillHub domain is live, add per-entry links: https://<site>/showcase/<slug>?utm_source=github&utm_medium=readme&utm_campaign=opus55 (slug = data/selected.json → slug; each entry below carries an HTML comment marker "showcase:<slug>"). Do not link before the site exists. -->
+<!-- TODO(showcase-site): Skilloop (https://skilloop.dev) is live for product CTA. Per-entry showcase deep-links can be added later when /showcase/<slug> routes exist: ?utm_source=github&utm_medium=readme&utm_campaign=opus55 -->
 
 # Awesome Claude Opus 5.5 · 精选视频与可视化案例
 
 **114 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
 *The 114 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
 
-[![精选案例](https://img.shields.io/badge/精选案例-114-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在线画廊](https://img.shields.io/badge/在线画廊-xianyu110.github.io-2ea44f)](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--06-blue)
+[![精选案例](https://img.shields.io/badge/精选案例-114-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在线画廊](https://img.shields.io/badge/在线画廊-xianyu110.github.io-2ea44f)](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--06-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
 
 🌐 **[在线画廊：1000+ 案例可搜索、按分类筛选、直接播放视频 →](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
 📚 **[完整 1000+ 案例清单（原始 1019 条，一条不少）→ ALL_CASES.md](ALL_CASES.md)**
 
-<!-- TODO(product-cta): a product / call-to-action banner can go here later. Intentionally left empty — no product or affiliate link yet. -->
+<!-- product-cta: Skilloop -->
+🛠️ **看完案例想自己做？** → [**Skilloop**](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55)：Claude Code / Codex / Cursor 的 Agent Skills 库，先预览真片再一键安装（视频 / 图片 / 幻灯 / 落地页）。  
+*Want to ship with the same stack?* [**Skilloop — Agent Skills for Claude Code, Codex & Cursor**](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_en)
 
 <table>
 <tr>
@@ -83,6 +85,7 @@
 - [🧭 怎么用这些提示词 · How to use](#how-to-use)
 - [📏 收录与排序标准 · Methodology](#methodology)
 - [📦 作者的更多 Awesome 清单 · More lists](#more-lists)
+- [🛠️ 相关工具 · Related](#相关工具--related)
 
 <a id="cat-game"></a>
 ## 🎮 游戏 · Games
@@ -359,10 +362,11 @@ make a dynamic 15-second motion graphics video that shows what an incredible mot
 | [xianyu110/awesome-fable-5.5](https://github.com/xianyu110/awesome-fable-5.5) | Claude Fable 5.5 作品合集与自测方法 |
 | [xianyu110/awesome-gpt-6-astra](https://github.com/xianyu110/awesome-gpt-6-astra) | GPT-6 Astra 游戏 / Demo / 提示词合集 |
 
-## Claude 国内使用
+## 相关工具 · Related
 
-| 服务 | 说明 | 链接 |
+| 项目 | 说明 | 链接 |
 |---|---|---|
+| **Skilloop** | Agent Skills 预览库（Claude Code / Codex / Cursor）— 先看真片再安装 | [skilloop.dev](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_related) |
 | MomoAI 包月 | Claude 包月订阅 | [momoai.asia](https://momoai.asia/home?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 | API 聚合 | Claude / GPT / Gemini 等模型 API 聚合 | [tryallapi.com](https://tryallapi.com/?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 
