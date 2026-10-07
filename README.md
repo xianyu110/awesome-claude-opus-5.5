@@ -3,12 +3,12 @@
 
 # Awesome Claude Opus 5.5 · 精选视频与可视化案例
 
-**124 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
-*The 124 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
+**149 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
+*The 149 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
 
-[![精选案例](https://img.shields.io/badge/精选案例-124-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--07-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
+[![精选案例](https://img.shields.io/badge/精选案例-149-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--07-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
 
-🌐 **[在 Skilloop 浏览 124 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
+🌐 **[在 Skilloop 浏览 149 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
 🗂️ [GitHub Pages 存档画廊（1000+ 可搜索）](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55_archive) · 📚 [完整 1019 条清单 → ALL_CASES.md](ALL_CASES.md)
 
 <!-- product-cta: Skilloop -->
@@ -371,9 +371,22 @@ make a dynamic 15-second motion graphics video that shows what an incredible mot
 | MomoAI 包月 | Claude 包月订阅 | [momoai.asia](https://momoai.asia/home?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 | API 聚合 | Claude / GPT / Gemini 等模型 API 聚合 | [tryallapi.com](https://tryallapi.com/?utm_source=github&utm_medium=readme&utm_campaign=opus55) |
 
+
+<a id="source-lists"></a>
+## 🔎 发现来源 · Discovery lists (attribution)
+
+本精选库**不宣称拥有**下列作品或清单。每条案例版权归**原作者**；视频请点击原帖外链观看（本仓库/站内不镜像成片）。
+
+| 清单 | 说明 |
+|---|---|
+| [zhuyansen/awesome-opus-5.5-video](https://github.com/zhuyansen/awesome-opus-5.5-video) | JasonZhu 维护的 Opus/Sonnet/Fable 5.5 视频案例索引（原帖、元数据、提示词来源）。本仓库部分新增条目经该清单**发现**后，仍链回创作者原帖；提示词全文仅在对方仓库/站点提供时才收录，否则只保留来源链接。 |
+| [ALL_CASES.md](ALL_CASES.md) | 本仓库早期自采的完整 X 帖清单（1019） |
+
+在线浏览对方合集：[jasonzhu.ai/en/prompts/claude-opus-5-5](https://jasonzhu.ai/en/prompts/claude-opus-5-5)
+
 ## 版权与贡献 · Credits & Contributing
 
-- 所有视频、图片、提示词版权归原作者所有，每条都链接到原帖；缩略图/预览仅为方便浏览。作者如希望修改或移除条目，请提 Issue。
+- 所有视频、图片、提示词版权归原作者所有，每条都链接到原帖；缩略图/预览仅为方便浏览，**不镜像专有成片**。本仓库不宣称拥有创作者作品，也不宣称拥有 [zhuyansen/awesome-opus-5.5-video](https://github.com/zhuyansen/awesome-opus-5.5-video) 清单。作者如希望修改或移除条目，请提 Issue。
 - 欢迎 PR / Issue 推荐新的 Opus 5.5 作品 🙌（请附原帖链接，最好带提示词）。
 - 本仓库 **链接认可 [LINUX DO](https://linux.do/) 社区**（友链）。感谢佬友与社区的开源氛围。
 
