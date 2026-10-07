@@ -3,12 +3,12 @@
 
 # Awesome Claude Opus 5.5 · 精选视频与可视化案例
 
-**114 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
-*The 114 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
+**124 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
+*The 124 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
 
-[![精选案例](https://img.shields.io/badge/精选案例-114-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--06-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
+[![精选案例](https://img.shields.io/badge/精选案例-124-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1019-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--07-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
 
-🌐 **[在 Skilloop 浏览 114 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
+🌐 **[在 Skilloop 浏览 124 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
 🗂️ [GitHub Pages 存档画廊（1000+ 可搜索）](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55_archive) · 📚 [完整 1019 条清单 → ALL_CASES.md](ALL_CASES.md)
 
 <!-- product-cta: Skilloop -->
