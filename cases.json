@@ -30561,5 +30561,419 @@
   "media": [],
   "full_text": "",
   "links": []
+ },
+ {
+  "id": 1020,
+  "category": "3D&WebGPU",
+  "title_zh": "Opus 操控 Blender 架空书房（续作）",
+  "desc_zh": "用 Claude Opus 5.5 操控 Blender 继续打磨架空书房：更细的设定与材质/镜头细节；作者强调需求定义最重要。帖内附视频。",
+  "author": "@shion_takk",
+  "url": "https://x.com/shion_takk/status/2110896887096369573",
+  "date": "2026-10-16 08:53",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 41,
+  "impressions": 2304,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110896761904771072/img/qxUnoQfHptG8dfx8.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110896761904771072/vid/avc1/1920x1080/WaUr4rbOfbLV6JVV.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110896761904771072/img/qxUnoQfHptG8dfx8.jpg",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "full_text": "Opus 5.5にBlenderを操作させて架空の書斎を作る\n\n引用元にやってることはほとんど書いていますが、今回はその続きです。\n改善作業を加え、より設定を詳細にしそれに合わせてディテールアップしています。\n\n【分かったこと】\n①やっぱり要件定義が最重要 https://t.co/LBUwwGLfc5 https://t.co/cnkXXTSoWQ",
+  "links": []
+ },
+ {
+  "id": 1021,
+  "category": "Game",
+  "title_zh": "马特霍恩 POV 滑雪：真实高程霓虹夜",
+  "desc_zh": "基于真实马特霍恩高程数据的浏览器 POV 滑雪，蓝调霓虹光照。作者声称用 Claude Opus 5.5 构建并可在浏览器运行（帖内主要为演示视频）。",
+  "author": "@techartist_",
+  "url": "https://x.com/techartist_/status/2110906072022097996",
+  "date": "2026-10-16 09:30",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 15,
+  "impressions": 564,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110838351037444096/img/AiMV3R3AQjSpNhUO.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110838351037444096/vid/avc1/1280x720/pIW4Gjj2udcdo6NA.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110838351037444096/img/AiMV3R3AQjSpNhUO.jpg",
+    "w": 1280,
+    "h": 720
+   }
+  ],
+  "full_text": "A POV ski game on real Matterhorn elevation data, neon lit at blue hour. Built with Claude Opus 5.5 and runs in the browser. https://t.co/66cKMIHxK4",
+  "links": []
+ },
+ {
+  "id": 1022,
+  "category": "3D&WebGPU",
+  "title_zh": "海陆空物流岛：Three.js 三维漫游",
+  "desc_zh": "Claude Opus 5.5 极高模式 + Three.js：港口岸桥/RTG/货轮、铁路枢纽、自动化仓储、机场跑道与办公区串联的可漫游客运物流岛。",
+  "author": "@ianneo_ai",
+  "url": "https://x.com/ianneo_ai/status/2110901063482237099",
+  "date": "2026-10-16 09:10",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 11,
+  "impressions": 775,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110897808849178624/img/_g0IJJDqf43yPaxs.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110897808849178624/vid/avc1/1572x1080/IuuHWUfuOdzLm57K.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110897808849178624/img/_g0IJJDqf43yPaxs.jpg",
+    "w": 1572,
+    "h": 1080
+   }
+  ],
+  "full_text": "花费点时间，用 Claude Opus 5.5 极高模式加上 Three.js，搓了一座支持三维漫游的现代化海陆空物流岛\n\n岛上把海运港口（岸桥、堆场 RTG、集装箱货轮）、货运铁路枢纽、自动化仓储物流中心、机场跑道和现代化办公区串起来了 https://t.co/wDmCtWp1yS",
+  "links": []
+ },
+ {
+  "id": 1023,
+  "category": "Game",
+  "title_zh": "小王子：穿越群星（3D 剧情游戏）",
+  "desc_zh": "约 16 天用 Opus 5.5（Tripo + Blender）把《小王子》做成可探索 3D 剧情游戏，计划开源。可玩：littleprince.dev。",
+  "author": "@Huahuazo",
+  "url": "https://x.com/Huahuazo/status/2110888201137311748",
+  "date": "2026-10-16 08:19",
+  "demo_url": "https://littleprince.dev",
+  "playable_demo": "yes",
+  "prompt_included": "no",
+  "likes": 7,
+  "impressions": 412,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110717452133027840/img/1CBzmo0oQhKT3v9q.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110717452133027840/vid/avc1/3840x2160/gUtrWca8BmIaj1yU.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110717452133027840/img/1CBzmo0oQhKT3v9q.jpg",
+    "w": 3840,
+    "h": 2160
+   }
+  ],
+  "full_text": "前后花了 16 天，用 Opus 5.5 把《小王子》做成了一个 3D 剧情游戏。\n\nTripo 配上 Blender，Opus 5.5 把故事里每一颗星球都变成了能探索的 3D 场景。\n\n希望大家能捧个场，后面会把整个游戏和详细制作流程都开源。\n\nWelcome to The Little Prince: Across the Stars\n✨：https://t.co/g0Y3EnvNz0 https://t.co/3OImcaCBLK",
+  "links": [
+   "https://littleprince.dev"
+  ]
+ },
+ {
+  "id": 1024,
+  "category": "Game",
+  "title_zh": "Fleet Week 喷气机浏览器游戏",
+  "desc_zh": "受旧金山 Fleet Week 启发，用 Opus 5.5 + Crayon 做成可玩喷气机游戏。试玩链接见原帖。",
+  "author": "@aniketjart",
+  "url": "https://x.com/aniketjart/status/2110902539453599928",
+  "date": "2026-10-16 09:15",
+  "demo_url": "https://app.usecrayon.ai/play/4b40fc26-472f-4643-b2e3-78fbba1dde74",
+  "playable_demo": "yes",
+  "prompt_included": "no",
+  "likes": 7,
+  "impressions": 433,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110901143614455808/img/-I42PDzKiH6pGg4b.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110901143614455808/vid/avc1/3840x2160/0egye_O1rT2GUKw9.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110901143614455808/img/-I42PDzKiH6pGg4b.jpg",
+    "w": 3840,
+    "h": 2160
+   }
+  ],
+  "full_text": "Recently saw fleetweek in sf! Was so hyped by all the jets i ended up building it as a game w/ Opus 5.5 and @usecrayon! \n\nPlay here: https://t.co/ALOtp7nHxx https://t.co/wZP6a7YOnO",
+  "links": [
+   "https://app.usecrayon.ai/play/4b40fc26-472f-4643-b2e3-78fbba1dde74"
+  ]
+ },
+ {
+  "id": 1025,
+  "category": "Comparison",
+  "title_zh": "同题对比：Gemini Argon vs Opus 5.5",
+  "desc_zh": "同题成本对比短视频：Gemini Argon 约 $0.19 vs Claude Opus 5.5 约 $12.06，看观感差异。",
+  "author": "@sashikantsingh_",
+  "url": "https://x.com/sashikantsingh_/status/2110908201474589089",
+  "date": "2026-10-16 09:38",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 10,
+  "impressions": 371,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110908171539841025/img/JSncjLApsLGmhvw-.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110908171539841025/vid/avc1/720x908/e5XrrqC0PJ6kx81Z.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110908171539841025/img/JSncjLApsLGmhvw-.jpg",
+    "w": 720,
+    "h": 908
+   }
+  ],
+  "full_text": "Gemini Argon ($0.19) vs Opus 5.5 ($12.06) https://t.co/NV81YLi1SS",
+  "links": []
+ },
+ {
+  "id": 1026,
+  "category": "Other",
+  "title_zh": "Ember 产品广告片（Opus 直出）",
+  "desc_zh": "作者让 Claude Opus 5.5 直接生成 Ember 产品广告视频，自称观感惊艳。帖子未附提示词。",
+  "author": "@rwdaigle",
+  "url": "https://x.com/rwdaigle/status/2110908453988237507",
+  "date": "2026-10-16 09:39",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 2,
+  "impressions": 112,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110908419573977088/img/jUQ-xJbkn4DA_PBh.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110908419573977088/vid/avc1/1440x1152/0jiekxyhutTtzoxN.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110908419573977088/img/jUQ-xJbkn4DA_PBh.jpg",
+    "w": 1440,
+    "h": 1152
+   }
+  ],
+  "full_text": "I had Claude/Opus 5.5 create this video ad for Ember\n\nI am stunned 🤯 https://t.co/02wmk8adve",
+  "links": []
+ },
+ {
+  "id": 1027,
+  "category": "Other",
+  "title_zh": "AI 漫画中国史②：商朝与甲骨文",
+  "desc_zh": "《AI 漫画中国史》第 2 集：商朝与甲骨文。作者标注 Opus 5.5 + Gemini 4 协作成片。",
+  "author": "@freeman1266",
+  "url": "https://x.com/freeman1266/status/2110909756835828000",
+  "date": "2026-10-16 09:44",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 1,
+  "impressions": 31,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110909431550816256/img/PSGU9p60_RNTGx7Q.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110909431550816256/vid/avc1/1080x1920/pMLtrtmAO6rAAhmF.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110909431550816256/img/PSGU9p60_RNTGx7Q.jpg",
+    "w": 1080,
+    "h": 1920
+   }
+  ],
+  "full_text": "AI 漫画中国史：第2集，商朝与甲骨文\n\nOpus 5.5 + Gemini 4 https://t.co/knv12XLL1W https://t.co/7xqCLCliem",
+  "links": []
+ },
+ {
+  "id": 1028,
+  "category": "Other",
+  "title_zh": "憨包找菌：狗狗采菌讲解视频",
+  "desc_zh": "受短视频《憨包很聪明》启发，用 Opus 5.5 做了一支介绍狗狗如何找菌子的讲解视频。",
+  "author": "@nicekate8888",
+  "url": "https://x.com/nicekate8888/status/2110912834762846343",
+  "date": "2026-10-16 09:56",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 1,
+  "impressions": 217,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110912700331253760/img/DhsuSSy6uUU9A40B.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110912700331253760/vid/avc1/1920x1080/iT7y_n-XmNo8UbhB.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110912700331253760/img/DhsuSSy6uUU9A40B.jpg",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "full_text": "最近一直迷短视频《憨包很聪明》，讲的是很会找菌子的狗狗\n\n让 Opus 5.5 做了个视频介绍狗狗怎么找菌子的 https://t.co/XXPGgFnw0h",
+  "links": []
+ },
+ {
+  "id": 1029,
+  "category": "Other",
+  "title_zh": "人工智能简史（Remotion / ~3min）",
+  "desc_zh": "用 Claude Opus 5.5 + Remotion 做的约 3 分钟《人工智能简史》；配音与配乐为外部工具。",
+  "author": "@moodomac",
+  "url": "https://x.com/moodomac/status/2110915740345962856",
+  "date": "2026-10-16 10:08",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 4,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110915387156250624/img/uZ1OWC1ndT9B2i15.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110915387156250624/vid/avc1/1920x1080/l7lABl9xyDeXRN7U.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110915387156250624/img/uZ1OWC1ndT9B2i15.jpg",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "full_text": "#Opus 5.5 对 #remotion 用的如火纯青，估计用 #hyperframe 也是一样。我这套技能完全直接可以起号...  这个视频做出来的时候我直接热血沸腾了...\n人工智能简史_3min\n配音和配乐用的外部工具 https://t.co/GnPbhP3Dii",
+  "links": []
+ },
+ {
+  "id": 1030,
+  "category": "3D&WebGPU",
+  "title_zh": "自研引擎车库：纯代码 30 件道具",
+  "desc_zh": "无 Blender/素材包：Claude Opus 5.5 按参考图约 3.5 小时在自研引擎里用代码建出车库（30 物体、26 材质、实时湿地面反射）。",
+  "author": "@arcwrightengine",
+  "url": "https://x.com/arcwrightengine/status/2110914844551528754",
+  "date": "2026-10-16 10:04",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 4,
+  "thumb": "https://pbs.twimg.com/media/HUt5uiNWgAAd1Oo.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110914690725396480/vid/avc1/1142x720/mDysstf3VahjG1HW.mp4",
+    "poster": "https://pbs.twimg.com/media/HUt5uiNWgAAd1Oo.jpg",
+    "w": 2048,
+    "h": 1292
+   }
+  ],
+  "full_text": "This whole garage was built by AI inside my own game engine. No Blender. No downloaded models.\n\nClaude Opus 5.5 built it from reference pictures in about 3.5 hours: 30 objects made from code, 26 materials, 95 pieces in the scene. The wet floor is reflecting the lights live. https://t.co/yBlK2pVHhO",
+  "links": []
+ },
+ {
+  "id": 1031,
+  "category": "Game",
+  "title_zh": "Roblox 海怪生存：鲨与血月",
+  "desc_zh": "自称不会写代码：Claude Opus 5.5 搭整款 Roblox 游戏；本周加入鲨鱼、血月与五日生存 Boss。",
+  "author": "@marquesbuilds",
+  "url": "https://x.com/marquesbuilds/status/2110916836678373820",
+  "date": "2026-10-16 10:12",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 9,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110916765865893888/img/wEB3aVJqjJTUEZzo.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110916765865893888/vid/avc1/1920x1080/rdWzhpw_ehb6R_FZ.mp4",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110916765865893888/img/wEB3aVJqjJTUEZzo.jpg",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "full_text": "claude opus 5.5 built my whole roblox game. i can't code.\n\nit's made $1.27 so far\n\nthis week it added a shark, a blood moon and a 5 night survival mode with a boss that walks out of the sea. trying to go full time by december https://t.co/mcziS1ywE4",
+  "links": []
+ },
+ {
+  "id": 1032,
+  "category": "Other",
+  "title_zh": "拖延症火柴人讲解动画",
+  "desc_zh": "一句话让 Claude Opus 5.5 做完整火柴人讲解动画，作者强调节奏与叙事 timing。",
+  "author": "@BooxMc",
+  "url": "https://x.com/BooxMc/status/2110889295695253824",
+  "date": "2026-10-16 08:23",
+  "demo_url": "",
+  "playable_demo": "no",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 12,
+  "thumb": "https://pbs.twimg.com/amplify_video_thumb/2110888365591556096/img/wLebyKUm9M1Wlz9d.jpg",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [
+   {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2110888365591556096/vid/avc1/1280x720/vtqVbtCQ6ob4QQJZ.mp4?tag=14",
+    "poster": "https://pbs.twimg.com/amplify_video_thumb/2110888365591556096/img/wLebyKUm9M1Wlz9d.jpg",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "full_text": "Claude Opus 5.5 is officially insane. 🤯\n\nI asked it to create a full stickman animation explaining procrastination, and the result blew my mind.\n\nLook at the pacing, the visual storytelling, and the timing. We are entering a whole new era of AI content creation. https://t.co/tj8oizDDis",
+  "links": []
+ },
+ {
+  "id": 1033,
+  "category": "Game",
+  "title_zh": "Atomic Bomberman：Opus 5.5 重制",
+  "desc_zh": "用 Claude Opus 5.5 重制并调校的 Atomic Bomberman。GitHub Pages 可玩。",
+  "author": "@danieldownes",
+  "url": "https://github.com/danieldownes/AtomicBomberman",
+  "date": "2026-10-15 00:00",
+  "demo_url": "https://danieldownes.github.io/AtomicBomberman/",
+  "playable_demo": "yes",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 0,
+  "thumb": "https://opengraph.githubassets.com/1/danieldownes/AtomicBomberman",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [],
+  "full_text": "Atomic Bomberman recreated and tuned with Opus 5.5",
+  "links": [
+   "https://danieldownes.github.io/AtomicBomberman/",
+   "https://github.com/danieldownes/AtomicBomberman"
+  ]
+ },
+ {
+  "id": 1034,
+  "category": "Game",
+  "title_zh": "Pizza Worm：1995 复古一键移植",
+  "desc_zh": "Zorlim’s Pizza Worm 2.1g（1995）经 Claude Code Opus 5.5 一键反编译并转成 HTML。GitHub Pages 可玩。",
+  "author": "@danieldownes",
+  "url": "https://github.com/danieldownes/PizzaWorm",
+  "date": "2026-10-15 00:00",
+  "demo_url": "https://danieldownes.github.io/PizzaWorm/",
+  "playable_demo": "yes",
+  "prompt_included": "no",
+  "likes": 0,
+  "impressions": 0,
+  "thumb": "https://opengraph.githubassets.com/1/danieldownes/PizzaWorm",
+  "thumb_cdn": "",
+  "video_cdn": "",
+  "media": [],
+  "full_text": "Retro conversion Zorlim's Pizza Worm 2.1g (1995). One-shot decopilation and HTML conversion from Claude Code Opus 5.5 model",
+  "links": [
+   "https://danieldownes.github.io/PizzaWorm/",
+   "https://github.com/danieldownes/PizzaWorm"
+  ]
  }
 ]
