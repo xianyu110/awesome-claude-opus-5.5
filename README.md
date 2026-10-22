@@ -3,12 +3,12 @@
 
 # Awesome Claude Opus 5.5 · 精选视频与可视化案例
 
-**383 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
-*The 383 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
+**413 个最值得看的 Claude Opus 5.5 作品**：游戏、3D 场景、动效视频、讲解动画、交互可视化……每个都附原帖、作者、点赞数，能找到的提示词也一并收录。  
+*The 413 best Claude Opus 5.5 video & visual demos — hand-picked from 1,019 real posts on X, with creators, likes and prompts.*
 
-[![精选案例](https://img.shields.io/badge/精选案例-383-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1034-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--21-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
+[![精选案例](https://img.shields.io/badge/精选案例-413-ff6a00)](#contents) [![完整清单](https://img.shields.io/badge/完整清单-1034-555)](ALL_CASES.md) [![在 Skilloop 浏览](https://img.shields.io/badge/在_Skilloop_浏览-skilloop.dev-7c3aed)](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55) ![updated](https://img.shields.io/badge/updated-2026--10--22-blue) [![Skilloop](https://img.shields.io/badge/Skills-Skilloop.dev-7c3aed)](https://skilloop.dev/?utm_source=github&utm_medium=readme&utm_campaign=opus55_badge)
 
-🌐 **[在 Skilloop 浏览 383 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
+🌐 **[在 Skilloop 浏览 413 精选案例（站内详情 / 提示词 / 同款 Skill）→](https://skilloop.dev/zh/ai-video/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=opus55)**  
 🗂️ [GitHub Pages 存档画廊（1000+ 可搜索）](https://xianyu110.github.io/awesome-claude-opus-5.5/?utm_source=github&utm_medium=readme&utm_campaign=opus55_archive) · 📚 [完整 1034 条清单 → ALL_CASES.md](ALL_CASES.md)
 
 <!-- product-cta: Skilloop -->
@@ -71,16 +71,16 @@
 <a id="contents"></a>
 ## 目录 Contents
 
-- [🎮 游戏 · Games](#cat-game)（46）
-- [🎬 动效 & 宣传片 · Motion Graphics & Launch Films](#cat-motion)（44）
-- [🧊 Three.js / WebGPU 3D 场景 · Three.js & WebGPU Scenes](#cat-threejs)（20）
+- [🎮 游戏 · Games](#cat-game)（53）
+- [🎬 动效 & 宣传片 · Motion Graphics & Launch Films](#cat-motion)（52）
+- [🧊 Three.js / WebGPU 3D 场景 · Three.js & WebGPU Scenes](#cat-threejs)（25）
 - [🏗️ Blender & 游戏引擎建模 · 3D Modeling: Blender · Unreal · Godot](#cat-blender)（22）
-- [📚 讲解动画 · Explainer Videos](#cat-explainer)（26）
-- [🔬 交互可视化 & 模拟 · Interactive Viz & Simulations](#cat-viz)（11）
+- [📚 讲解动画 · Explainer Videos](#cat-explainer)（27）
+- [🔬 交互可视化 & 模拟 · Interactive Viz & Simulations](#cat-viz)（12）
 - [🌐 网页 & UI · Web & UI](#cat-web)（12）
-- [🎵 音乐 · MV · Demoscene · Music, MVs & Demoscene](#cat-music)（10）
-- [🛠️ 应用 & Agent 工作流 · Apps & Agent Workflows](#cat-apps)（11）
-- [⚔️ 模型同题对比 · Head-to-Head Comparisons](#cat-compare)（19）
+- [🎵 音乐 · MV · Demoscene · Music, MVs & Demoscene](#cat-music)（11）
+- [🛠️ 应用 & Agent 工作流 · Apps & Agent Workflows](#cat-apps)（14）
+- [⚔️ 模型同题对比 · Head-to-Head Comparisons](#cat-compare)（23）
 - [📝 附提示词的案例 · Prompts](#prompts)
 - [🧭 怎么用这些提示词 · How to use](#how-to-use)
 - [📏 收录与排序标准 · Methodology](#methodology)
